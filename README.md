@@ -1,22 +1,29 @@
-# placeholderColinTravis
+# Placeholder Colin Travis Website
 
-> Placeholder Site for ColinTravis.com
+> Colin Travis Website (placeholder)
 
-## Build Setup
+## Table of contents
+- [ColinTravisWeb](#Colin-Travis)
+  - [Table of contents](#Table-of-contents)
+  - [Installation](#Installation)
+  - [Credits](#Credits)
+    - [Authors](#Authors)
+    - [Software](#Software)
 
-``` bash
-# install dependencies
-$ yarn install
+## Installation
 
-# serve with hot reload at localhost:3000
-$ yarn run dev
+## To-Do
 
-# build for production and launch server
-$ yarn run build
-$ yarn start
+## Credits
 
-# generate static project
-$ yarn run generate
-```
+### Authors
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+This project was created by:
+- [@colintravis](https://colintravis.com)
+
+### Software
+
+This project has been built using the following frameworks:
+
+- [Nuxt](https://nuxtjs.org/)
+- [TailWindCSS](https://tailwindcss.com)
