@@ -5,6 +5,7 @@
         <div class="border-teal p-4 border-t-12 bg-white mb-6 rounded-lg shadow-xl">
           <logo class="mx-auto block w-1/2"/>
           <h1 class="text-center mb-8">ColinTravis.com</h1>
+          <p class="text-center">🤷‍♂️ ⏳</p>
           <!-- <div class="flex flex-col items-center justify-between">
             <h1 class="text-center font-medium text-xl mb-4">Exciting new things are coming.</h1>
             <p class="text-center font-light"> A new build of this website based on Nuxt.js, with a blazing fast headless CMS is prepping to deploy...</p>
