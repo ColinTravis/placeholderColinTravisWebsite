@@ -4,7 +4,7 @@ const meta = {
   title: 'Colin Travis',
   description: 'Colin Travis: Maker, Developer',
   url: 'https://colintravis.com',
-  image: '/logos/ct_logo_dark.png'
+  image: 'https://colintravis.com/ct_meta.jpg'
 }
 
 export default {
