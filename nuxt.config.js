@@ -1,43 +1,68 @@
+const { theme } = require('./tailwind.config')
+
+const meta = {
+  title: 'Colin Travis',
+  description: 'Colin Travis: Maker, Developer',
+  url: 'https://colintravis.com',
+  image: '/logos/ct_logo_dark.png'
+}
 
 export default {
   mode: 'universal',
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    title: "ColinTravis.com",
+    title: meta.title,
+    htmlAttrs: {
+      lang: 'en'
+    },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "ColinTravis.com" }
+      {
+        name: 'viewport',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0'
+      },
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'theme-color', content: theme.extend.colors['ct-blue'] }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
+   ** Customize the progress-bar color
+   */
+  loading: { color: theme.extend.colors['ct-blue'] },
   /*
-  ** Global CSS
-  */
-  css: [
-    '~/assets/css/tailwind.css'
-  ],
+   ** Global CSS
+   */
+  css: ['~/assets/css/tailwind.css'],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+
+  seo: {
+    // Module options
+    baseUrl: meta.url,
+    title: meta.title,
+    description: meta.description,
+    image: meta.image,
+    openGraph: {
+      baseUrl: meta.url,
+      title: meta.title,
+      description: meta.description,
+      image: meta.image
+    }
+  },
+  plugins: [],
   /*
-  ** Nuxt.js modules
-  */
-  modules: [
-  ],
+   ** Nuxt.js modules
+   */
+  modules: ['nuxt-seo'],
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     postcss: {
       plugins: {
@@ -45,9 +70,8 @@ export default {
       }
     },
     /*
-    ** You can extend webpack config here
-    */
-    extend(config, ctx) {
-    }
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {}
   }
 }
